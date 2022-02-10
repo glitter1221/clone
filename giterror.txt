@@ -45,3 +45,41 @@ reference broken
 
  해결 2 : defalt branch를 master에서 main으로 바꿈. error 안 남.
           github contribution(잔디밭) 삭제됨
+
+
+ 22/02/10
+
+ error : fatal: cannot lock ref 'HEAD': 
+ unable to resolve reference 
+ 'refs/heads/main': reference broken
+
+  이유 : ???? 왜 또
+
+  과정 :
+  git rm .git/refs/heads/main
+  fatal: pathspec '.git/refs/heads/main' did not match any files
+
+  폴더 경로 .git/refs/heads/branch 폴더에서 main 파일 삭제
+
+  git pull 함.
+  fatal: bad object refs/remotes/origin/main
+  error: https://github.com/glitter1221/clone did not send all 
+  necessary objects
+
+  git fetch 함.
+  fatal: bad object refs/remotes/origin/main
+  error: https://github.com/glitter1221/clone did not send all 
+  necessary objects
+
+  git add commit push, push에서 error 발생
+  error: failed to push some refs to 'https://github.com/glitter1221/clone'
+  hint: Updates were rejected because the tip of your current branch is behind
+  hint: its remote counterpart. Integrate the remote changes (e.g.
+  hint: 'git pull ...') before pushing again.
+  hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+  git push origin +main 함.
+  + fced09e...ed56055 main -> main (forced update)
+  error: update_ref failed for ref 'refs/remotes/origin/main': 
+  cannot lock ref 'refs/remotes/origin/main': unable to resolve reference 'refs/remotes/origin/main': reference broken
+  : push는 됐지만 reference는 여전히 broken
