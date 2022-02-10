@@ -1,0 +1,47 @@
+21/12/06
+
+git push 시 error 발생
+fatal: cannot lock ref 'HEAD': unable to resolve 
+reference 'refs/heads/master': reference broken
+
+이유 : 데이터 유실 등의 문제 있는 부분이 있어 git에서 막는 것
+
+해결 : git push origin +master
+ 에러와 상관없이 강제로 push
+
+
+ 21/12/30
+
+ git add 시 error 발생
+ warning: LF will be replaced by CRLF in zoom/package-lock.json.
+The file will have its original line endings in your working directory        
+warning: LF will be replaced by CRLF in zoom/package.json.
+The file will have its original line endings in your working directory 
+
+이유 : 마지막 줄
+
+해결 : git config (--global) core.autocrlf true
+
+ 22/01/22
+
+ git commit 시 error 발생
+ fatal: cannot lock ref 'HEAD': unable to 
+resolve reference 'refs/heads/master': reference broken
+
+ 이유 : branch 이름??
+
+ 해결 : git rm .git/refs/heads/master
+        git fetch
+        git push origin +master
+
+error: update_ref failed for ref 'refs/remotes/origin/master': 
+cannot lock ref 'refs/remotes/origin/master': 
+unable to resolve reference 'refs/remotes/origin/master': 
+reference broken
+
+ 이유 : ???
+
+ 해결 : push가 되긴 됨
+
+ 해결 2 : defalt branch를 master에서 main으로 바꿈. error 안 남.
+          github contribution(잔디밭) 삭제됨
