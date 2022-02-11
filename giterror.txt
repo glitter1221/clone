@@ -83,3 +83,12 @@ reference broken
   error: update_ref failed for ref 'refs/remotes/origin/main': 
   cannot lock ref 'refs/remotes/origin/main': unable to resolve reference 'refs/remotes/origin/main': reference broken
   : push는 됐지만 reference는 여전히 broken
+
+  rm .git/refs/remotes/origin 함.
+  -> origin 폴더에 HEAD, master, main 파일 존재.
+
+  git fetch함.
+
+  push까지 매우 잘됨.
+
+  원인 : 폴더에 이전 branch와 지금 branch 끼리 부딪힌 것 같음
