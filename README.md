@@ -27,6 +27,3 @@
 
  9. node : restAPI tutorial
   tech : js, node.js, express
-
- 10. management : customer information management
-  tech : react, material ui
