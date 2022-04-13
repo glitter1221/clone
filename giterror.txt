@@ -92,3 +92,15 @@ reference broken
   push까지 매우 잘됨.
 
   원인 : 폴더에 이전 branch와 지금 branch 끼리 부딪힌 것 같음
+
+
+  22/04/13
+
+error: update_ref failed for ref 'refs/remotes/origin/main': 
+cannot lock ref 'refs/remotes/origin/main': 
+unable to resolve reference 'refs/remotes/origin/main': 
+reference broken Everything up-to-date
+
+원인 :
+
+해결 :
