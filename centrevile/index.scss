@@ -23,10 +23,32 @@ header {
             flex: 1;
             line-height: 70px;
 
-            a {
-                background: url() no-repeat 1px 3px;
-                text-indent: 21px;
-                //17분
+            &:first-child {
+                a {   
+                    & ::before {
+                        //로그인 아이콘 이미지
+                        background: url() no-repeat;
+                        content: '';
+                        width: 23px;
+                        height: 23px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            
+            &:last-child {
+                a {   
+                    & ::before {
+                        //로그인 아이콘 이미지
+                        background: url() no-repeat -23px 0;
+                        content: '';
+                        width: 23px;
+                        height: 23px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
             }
         }
     }
