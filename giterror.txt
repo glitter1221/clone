@@ -101,6 +101,27 @@ cannot lock ref 'refs/remotes/origin/main':
 unable to resolve reference 'refs/remotes/origin/main': 
 reference broken Everything up-to-date
 
-원인 :
+원인 : ?
 
-해결 :
+해결 : git add * -> commit -> push
+
+error: update_ref failed for ref 'refs/remotes/origin/main': 
+cannot lock ref 'refs/remotes/origin/main': 
+unable to resolve reference 'refs/remotes/origin/main': 
+
+원인 : ?
+
+해결 : rm .git/refs/remotes/origin/main
+    ->  * [new branch]      main       -> origin/main
+     add commit 
+    -> On branch main 
+     push
+    -> Everything up-to-date
+    (github push 됨)
+
+    Everything up-to-date가 나오는 이유 :
+    이는 원격 저장소 상에 아직 master 브랜치가 작성되지 않았기 때문입니다. 
+    push 할 때의 인수가 생략된 경우 기본적으로 원격 저장소와 로컬 저장소 
+    양쪽에 모두 존재하는 브랜치가 push의 대상이 됩니다. 
+    따라서 원격 저장소에 존재하지 않는 브랜치를 push하는 경우에는 
+    저장소와 브랜치를 명시적으로 지정할 필요가 있습니다.
