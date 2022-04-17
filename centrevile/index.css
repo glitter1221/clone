@@ -111,6 +111,7 @@ header #lnb nav > ul > li > a:hover::after {
 
 header #lnb nav > ul ul {
     position: absolute;
+    text-align: center;
 }
 
-/* 40분 */
+/* 40분  */
