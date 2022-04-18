@@ -83,7 +83,7 @@ header #lnb nav > ul > li {
     display: inline-block;
 }
 
-header #lnb nav > ul > li > a{
+header #lnb nav > ul > li > a {
     display: block;
     position: relative;
     width: 160px;
@@ -112,6 +112,18 @@ header #lnb nav > ul > li > a:hover::after {
 header #lnb nav > ul ul {
     position: absolute;
     text-align: center;
+    width: 100%;
+    padding: 23px 0 0;
 }
 
-/* 40분  */
+header #lnb nav > ul ul li {
+    line-height: 39px;
+}
+
+
+header #lnb nav > ul ul a {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 43분  */
