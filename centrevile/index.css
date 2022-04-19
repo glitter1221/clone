@@ -24,6 +24,7 @@ header h1 {
     position: absolute;
     left: 30px;
     top: 0;
+    z-index: 30;
 }
 
 header visual img {
@@ -37,6 +38,7 @@ header > ul {
     top: 0;
     width: 170px;
     background: #f2f2f2;
+    z-index: 31;
 }
 
 header > ul li {
@@ -69,14 +71,42 @@ header #lnb {
     padding: 0 232px;
     width: 100%;
     box-sizing: border-box;
+    z-index: 30;
 }
 
 header #lnb nav {
     border-bottom: 1px solid rgba(255, 255, 255 0.5);
+    text-align: center;
+    font-size: 0;
+    position: relative;
+    z-index: 30;
 }
 
 header #lnb nav > ul {
-    text-align: center;
+    display: inline-block;
+    height: 69px;
+    overflow: hidden;
+}
+
+header #lnb nav + div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #042e6f;
+    z-index: 29;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+header #lnb nav:hover + div {
+    height: 330px;
+    opacity: 1;
+}
+
+
+header #lnb nav > ul:hover {
+    overflow: visible;
 }
 
 header #lnb nav > ul > li {
@@ -114,6 +144,12 @@ header #lnb nav > ul ul {
     text-align: center;
     width: 100%;
     padding: 23px 0 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+header #lnb nav > ul:hover ul {
+    opacity: 1;
 }
 
 header #lnb nav > ul ul li {
@@ -122,8 +158,30 @@ header #lnb nav > ul ul li {
 
 
 header #lnb nav > ul ul a {
+    position: relative;
     font-size: 14px;
     color: #fff;
+    transition: all 0.5s;
 }
 
-/* 43분  */
+header #lnb nav > ul ul a:hover {
+    color: #2acef1;
+}
+
+header #lnb nav > ul ul a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #2acef1;
+    transition: all 0.5s;
+}
+
+header #lnb nav > ul ul a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+/* 57분  */
