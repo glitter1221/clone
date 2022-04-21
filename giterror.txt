@@ -125,3 +125,15 @@ unable to resolve reference 'refs/remotes/origin/main':
     양쪽에 모두 존재하는 브랜치가 push의 대상이 됩니다. 
     따라서 원격 저장소에 존재하지 않는 브랜치를 push하는 경우에는 
     저장소와 브랜치를 명시적으로 지정할 필요가 있습니다.
+
+
+22/04/21
+
+error: update_ref failed for ref 'refs/remotes/origin/main': 
+cannot lock ref 'refs/remotes/origin/main': 
+unable to resolve reference 'refs/remotes/origin/main': 
+reference broken
+
+원인 : ??
+
+해결 : 일단 push는 잘 됨 그냥.
