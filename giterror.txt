@@ -137,3 +137,19 @@ reference broken
 원인 : ??
 
 해결 : 일단 push는 잘 됨 그냥.
+
+
+22/04/24
+
+commit 시
+
+fatal: cannot lock ref 'HEAD': 
+unable to resolve reference 'refs/heads/main': reference broken   
+
+push 시
+
+fatal: refs/heads/main
+
+git branch 시
+
+fatal: Failed to resolve HEAD as a valid ref.
