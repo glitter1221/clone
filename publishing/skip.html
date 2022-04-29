@@ -34,7 +34,22 @@
                         <h1>Professional Publisher &amp; Designer</h1><br>
                         <a href="https://webstoryboy.co.kr">webstoryboy.co.kr</a>
                     </div>
-                    <div class="header-icon"></div>
+                    <!-- 이미지 표현 방법
+                        1. img 태그 표현 / alt 태그로 대체 문자 표현
+                        2. background 속성으로 표현 / 대체 문자 표현 x
+                        3. background 속성으로 표현
+                          - 웹 표준 준수를 위해 가상으로 대체 문자 표현(IR 효과)
+                          이미지 스프라이트 효과
+                    -->
+
+                    <div class="header-icon">
+                        <a href="#" class="icon"><span class="ir_pm">icon1</span></a>
+                        <a href="#" class="icon"><span class="ir_pm">icon2</span></a>
+                        <a href="#" class="icon"><span class="ir_pm">icon3</span></a>
+                        <a href="#" class="icon"><span class="ir_pm">icon4</span></a>
+                    </div>
+
+                    <!-- 헤더 아이콘 -->
                 </div>
             </div>    
         </div>
