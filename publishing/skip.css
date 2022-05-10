@@ -565,7 +565,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid #0093db;
+    border: 1px solid #0093bd;
 }
 
 .notice3 ul li a strong {
@@ -824,4 +824,145 @@ em {
     position: absolute;
     top: 9px;
     right: 9px;
+}
+
+/* 갤러리 */
+.gallery {
+    border: 1px solid #ccc;
+    height: 254px;
+}
+
+.gallery h4 {
+    font-size: 14px;
+    color: #0093bd;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 8px 11px;
+    font-weight: bold;
+}
+
+.gallery .gallery_btn {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+
+.gallery .gallery_btn ul {
+    overflow: hidden;
+}
+
+.gallery .gallery_btn ul li {
+    float: left;
+    margin: 1px 2px;
+}
+
+.gallery .gallery_btn ul li a {
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../img/icon.png) no-repeat;
+}
+
+.gallery .gallery_btn ul li.gb_icon1 a {
+    background-position: -150px -120px;
+}
+
+.gallery .gallery_btn ul li.gb_icon2 a {
+    background-position: -150px -143px;
+}
+
+.gallery .gallery_btn ul li.gb_icon3 a {
+    background-position: -150px -166px;
+}
+
+.gallery .gallery_btn ul li.gb_icon4 a {
+    background-position: -150px -189px;
+}
+
+.gallery .gallery_btn ul li.gb_icon1 a:hover {
+    background-position: -173px -120px;
+}
+
+.gallery .gallery_btn ul li.gb_icon2 a:hover {
+    background-position: -173px -143px;
+}
+
+.gallery .gallery_btn ul li.gb_icon3 a:hover {
+    background-position: -173px -166px;
+}
+
+.gallery .gallery_btn ul li.gb_icon4 a:hover {
+    background-position: -173px -189px;
+}
+
+.gallery .gallery_img img {
+    widows: 100%;
+}
+
+/* 테두리 초기화 */
+img,fieldset {
+    border: 0 none;
+}
+
+/* 로그인 */
+#login_form {
+    background: #f2f4f5;
+    padding: 15px;
+}
+
+.login_header {
+    overflow: hidden;
+    height: 30px;
+}
+
+.login_header .lh_check {
+    float: left;
+    padding-right: 15px;
+}
+
+.login_header .lh_check .input_check {
+    vertical-align: -2px;
+}
+
+.login_header .lh_ip {
+    float: left;
+}
+
+.login_header .lh_ip em {
+    color: #0093bd;
+    text-decoration: underline;
+}
+
+.login_content {
+    position: relative;
+}
+
+.login_content .lc_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62px;
+    height: 47px;
+    background: #fff;
+    border: 1px solid #bebebe;
+}
+
+.login_content .input_text {
+    width: 160px;
+    height: 16px;
+    padding: 2px 5px;
+    border: 1px solid #bebebe;
+    margin-bottom: 3px;
+    background: #fff;
+}
+
+.login_footer {
+    margin-top: 5px;
+}
+
+.login_footer ul li {
+    display: inline;
+}
+
+.login_footer ul li a {
+    font-size: 12px;
 }
