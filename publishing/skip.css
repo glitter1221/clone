@@ -257,8 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer {
-    height: 200px;
-    background: #333;
+    border-top: 1px solid #eee;
 }
 
 #cont_nav {
@@ -652,7 +651,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 폰트 스타일 초기화 */
-em {
+em, address {
     font-style: normal;
 }
 
@@ -992,4 +991,37 @@ img,fieldset {
 
 .popup ul li img {
     width: 100%;
+}
+
+/* 푸터 */
+.footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer ul {
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 0 7px 0 10px;
+    position: relative;
+}
+
+.footer ul li::before {
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    position: absolute;
+}
+
+.footer li:first-child::before {
+    width: 0;
+    height: 0;
+}
+
+.footer .w3c {
+    margin-top: 15px;
 }
