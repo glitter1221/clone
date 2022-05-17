@@ -262,6 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #cont_nav {
     background: #f6fdff;
+    display: none;
 }
 
 #cont_tit {
