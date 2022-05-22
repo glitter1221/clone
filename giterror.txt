@@ -171,3 +171,5 @@ unable to resolve reference 'refs/remotes/origin/main': reference broken
 Everything up-to-date
 
 error가 나오긴 했지만 일단 +로 push해서 되긴 됨
+
+해결 : 컴 바꾸니 아무 일도 없음 ㅎㅎ
